@@ -1,0 +1,13 @@
+module corba {
+    interface DTO {
+        attribute string name;
+        attribute long count;
+    };
+
+    interface ServerService {
+
+        string method1();
+
+        DTO method2(in string str);
+    };
+};
